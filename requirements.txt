@@ -1,0 +1,12 @@
+conda create --name IR_env python=3.14.3
+conda activate IR_env
+pip install elasticsearch
+pip install -U transformers
+pip install -U sentence-transformers
+pip install -U datasets
+pip install -U clean-text
+pip install faiss-cpu
+pip install -U ipykernel
+pip install -U jupyterlab
+pip install -U notebook
+python -m ipykernel install --user --name=IR_env
